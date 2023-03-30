@@ -1,5 +1,5 @@
 
-# RazerEnhanced Tutorials
+# RazorEnhanced Tutorials
 
 [RazorEnhanced: Scripting Tutorials](RazorEnhanced_Scripting_Tutorials/000__RazorEnhanced_Scripting_Index.md)<br>
 [RazorEnhanced: Source Code Tutorials](RazorEnhanced_Source_Code_Tutorials/000__RazorEnhanced_Source_Code_Index.md)<br>
