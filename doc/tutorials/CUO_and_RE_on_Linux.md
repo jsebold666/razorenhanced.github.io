@@ -1,34 +1,47 @@
-# CUO and RE on Linux
+# CUO and RE with Wine-staging #
 
-Just create a new `WINEPREFIX` exclusively for RE setup.
-At least thats what I did here.
+## Credits
 
-* I create a new 64-bit `WINEPREFIX` simply by running winetricks and specifying the new prefix, like this:
-  ```WINEPREFIX=/home/<your-username>/wine/cuo winetricks```
-  This will create a new `WINEPREFIX` inside `<your-user-home-folder>/wine/cuo`.
-  You can just close winetricks once it opens.
+tau#7508
+Zaos Xyrdan#1074
+Ecte#6799
 
-* Then run everything specifying that `WINEPREFIX` on every command as an env var, including RE setup and when running CUO
-  Like this:
+## Instructions
 
-```sh
-WINEPREFIX=/home/$USER/wine/cuo wine razorenhanced-setup.exe
-```
+1. Install wine staging branch, guide here -> [Wine Wiki](https://wiki.winehq.org/Download)
 
-* And this is the script I use to run RE Launcher:
+2. Follow this guide
+[(Discord Link)](https://discord.com/channels/292282788311203841/866766902839869480/958734508381855786)
+for creating a wineprefix
 
-```sh
-#!/bin/bash
-cd "/home/$USER/uo/razor-enhanced/"
-WINEPREFIX=/home/$USER/wine/cuo wine RazorEnhanced.exe
-```
+3. OK now we have a clean wineprefix folder. (don't agree with automatically installing mono, but it doesn't really matter)
+    * Use your "`WINEPREFIX=`" folder for *everything* you run with `wine`, `winetricks`, `winecfg` ...  
+I will not mention this again.  
+(Doesn't really matter, but this way you will have wineprefix just for running Ultima, without wineprefix it defaults to your home/.wine/ , you can nuke this by accident really easy.)
 
-* As you see, I first cd into the folder I put RE executable in (it doesn't have to be inside the `WINEPREFIX` folder), then I run RE executable with wine while specifying the new prefix we created for it.
+4. Run winecfg, and set default environment to windows 10.
 
-* Save that bash script, then run `chmod +x` on it:
+5. Run `winetricks` install dll module -> to install .NET 4.8
 
-```bash
-chmod +x name-of-the-script.sh
-```
+6. First make sure standalone CUO client can run through CUO launcher.
+    * This could be probably HW dependent -
+I'm running on laptop with integrated INTEL graphics.  
+        * Run `wine ClassicUOlauncher`
+        * go to settings for your profiles
+        * and change graphics driver to OpenGL.
+    * When you launch CUO through CUOlauncher, it should work.
+    * Exit.
 
-* After that run the bash script and RE should open.
+Now we make sure standalone RazorEnhanced can run:
+
+1. Unzip it somewhere.
+2. Go to RazorEnhanced folder.
+3. Try run it with `wine RazorEnhanced.exe`
+4. If you get a "LDAP something" error,
+fix this by
+    * running `wine regedit`
+    * Add key "Drives" into path `HKLM/Software/Wine/`
+5. Fill clients paths into razor.
+    * Try launching it with Client button (it should launch RazorEnh with osi client)
+    * Try launching it with CUO button, it should launch CUOclient with RazorEnh.
+    * Launching through ClassicUOLauncher.exe works for me too, I've added plugin with "add from .zip", from file `RazorEnhanced**.zip`.
