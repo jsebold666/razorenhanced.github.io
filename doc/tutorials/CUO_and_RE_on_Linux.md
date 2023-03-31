@@ -2,9 +2,9 @@
 
 ## Credits
 
-tau#7508
-Zaos Xyrdan#1074
-Ecte#6799
+- tau#7508    
+- Zaos Xyrdan#1074
+- Ecte#6799
 
 ## Instructions
 
