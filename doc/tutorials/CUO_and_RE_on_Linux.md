@@ -1,4 +1,4 @@
-# CUO and RE with Wine-staging #
+# CUO and RE with `wine-staging`
 
 ## Credits
 
@@ -19,7 +19,7 @@ for creating a wineprefix
 I will not mention this again.  
 (Doesn't really matter, but this way you will have wineprefix just for running Ultima, without wineprefix it defaults to your home/.wine/ , you can nuke this by accident really easy.)
 
-4. Run winecfg, and set default environment to windows 10.
+4. Run `winecfg`, and set default environment to Windows 10.
 
 5. Run `winetricks` install dll module -> to install .NET 4.8
 
