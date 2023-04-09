@@ -1,6 +1,6 @@
 <WRAP group>
 <WRAP 30% column>
-**Home1**
+**Home2**
   * [[http://www.razorEnhanced.net| Home]]
 **Start**
   * [[Download|Download]]
