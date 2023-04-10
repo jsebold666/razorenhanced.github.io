@@ -1,7 +1,6 @@
 ====== Assistant - Vendor Buy ======
 
-Here can find some infomation about new Enhanced Vendor Buy! This agent allow user to buy automatically some item from vendor whit specific filter.
-
+Here can find some information about the new Enhanced Vendor Buy! This agent allows the user to buy items from a vendor automatically with a specific filter.
 ====== Main Window ======
 
   - Whit this selectbox can switch item Buy list.
