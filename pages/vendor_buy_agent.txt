@@ -20,9 +20,9 @@ Here you can find some information about the new Enhanced Vendor Buy! This agent
   - This column is the amount of that Item the Agent will try to buy when you visit a vendor with that Item in stock.
   - This column is the Color ID of the Item in the list. If the Color ID for that Item is not -1, the Agent will buy that colored Item unless you choose to compare Items by their name.
 ====== Add Item Window ======
-  - This textbox is used for insert Item name.
-  - This textbox is used for insert item graphics.
-  - This textbox is used for insert item amount.
-  - This textbox is used for insert item color. This can be also -1 for All color.
-  - Use this button to save and add item to list.
-  - Use this button for close window whitout any insert.
+  - This textbox is used for inserting the Item Name.
+  - This textbox is used for inserting the Item Graphic ID.
+  - This textbox is used for inserting the item Quantity.
+  - This textbox is used for inserting the item color. This can also be -1 for any color.
+  - Use this button to save and add items to the list.
+  - Use this button to close the window without inserting anything.
