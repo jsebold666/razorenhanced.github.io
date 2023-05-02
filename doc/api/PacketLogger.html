@@ -8,7 +8,7 @@
 </head>
 
 <body>
-<div class="redoc-page-container"><div class="redoc-page-left"><div class="redoc-doc-version"><a href="./index.html">RE API v0.8.2.81</a></div><div id="redoc-main-menu"><a class="redoc-main-menu-entry" href="./AutoLoot.html">AutoLoot</a>
+<div class="redoc-page-container"><div class="redoc-page-left"><div class="redoc-doc-version"><a href="./index.html">RE API v0.8.2.83</a></div><div id="redoc-main-menu"><a class="redoc-main-menu-entry" href="./AutoLoot.html">AutoLoot</a>
 <a class="redoc-main-menu-entry" href="./AutoLoot.AutoLootItem.html">AutoLoot.AutoLootItem</a>
 <a class="redoc-main-menu-entry" href="./BandageHeal.html">BandageHeal</a>
 <a class="redoc-main-menu-entry" href="./BuyAgent.html">BuyAgent</a>
@@ -33,10 +33,9 @@
 <a class="redoc-main-menu-entry" href="./Mobiles.TrackingInfo.html">Mobiles.TrackingInfo</a>
 <a class="redoc-main-menu-entry" href="./Organizer.html">Organizer</a>
 <a class="redoc-main-menu-entry" href="./PacketLogger.html">PacketLogger</a>
+<a class="redoc-main-menu-entry" href="./PacketLogger.FieldTemplate.html">PacketLogger.FieldTemplate</a>
+<a class="redoc-main-menu-entry" href="./PacketLogger.FieldType.html">PacketLogger.FieldType</a>
 <a class="redoc-main-menu-entry" href="./PacketLogger.PacketTemplate.html">PacketLogger.PacketTemplate</a>
-<a class="redoc-main-menu-entry" href="./PacketLogger.PacketTemplate.FieldTemplate.html">PacketLogger.PacketTemplate.FieldTemplate</a>
-<a class="redoc-main-menu-entry" href="./PacketLogger.PacketTemplate.FieldType.html">PacketLogger.PacketTemplate.FieldType</a>
-<a class="redoc-main-menu-entry" href="./PacketLogger.PacketTemplateParser.html">PacketLogger.PacketTemplateParser</a>
 <a class="redoc-main-menu-entry" href="./PathFinding.html">PathFinding</a>
 <a class="redoc-main-menu-entry" href="./PathFinding.Route.html">PathFinding.Route</a>
 <a class="redoc-main-menu-entry" href="./Player.html">Player</a>
@@ -65,7 +64,7 @@
 <div class="redoc-class-method-entry"><a id="M-PacketLogger-AddTemplate" class="redoc-permalink" href="#M-PacketLogger-AddTemplate"><i class="redoc-icon-link fas fa-link "></i></a><div class="redoc-method-container"><div class=" redoc-collapsable-container closed-container"><div class="redoc-collapsable-container-closed"><div class="redoc-method-signature"><i class="redoc-icon-expand fas fa-angle-down "></i><span class="method-class-name">PacketLogger</span>.<span class="method-name">AddTemplate</span>(<span class="redoc-method-params-sign"><span class="redoc-variable-name">packetTemplate</span></span>)</div></div><div class="redoc-collapsable-container-open"><div class="redoc-property-title"><i class="redoc-icon-collapse fas fa-angle-up"></i><span class="method-class-name">PacketLogger</span>.<span class="method-name">AddTemplate</span>(<span class="redoc-method-params-sign"><span class="redoc-variable-name">packetTemplate</span></span>)</div>
 <div class="method-description">Add a custom template for RazorEnhanced packet logger.
 Example of "Damage" (0x0B) packet:
-            {
+{
  'packetID': 0x0B,
  'name': 'Damage 0x0B',
  'showHexDump': true,
@@ -74,8 +73,8 @@ Example of "Damage" (0x0B) packet:
    { 'name':'Serial', 'length':4, 'type':'serial'},
    { 'name':'Damage', 'length': 2, 'type':'int'},
  ]
-            }</div>
-<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params-box"><span class="redoc-method-params"><span class="redoc-variable-name">packetTemplate</span><span class="redoc-variable-type">String</span><div class="redoc-method-params-desc">Remove a PacketTemplate, check ./Config/packets/ folder.</div></span></div></div>
+}</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params-box"><span class="redoc-method-params"><span class="redoc-variable-name">packetTemplate</span><span class="redoc-variable-type">String</span><div class="redoc-method-params-desc">Add a PacketTemplate, check ./Config/packets/ folder.</div></span></div></div>
 <div class="method-returns"><div id="" class="redoc-method-return"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return-box"><span class="redoc-variable-type">Void</span><br/></div></div></div></div></div></div></div>
 <div class="redoc-class-method-entry"><a id="M-PacketLogger-AddWhitelist" class="redoc-permalink" href="#M-PacketLogger-AddWhitelist"><i class="redoc-icon-link fas fa-link "></i></a><div class="redoc-method-container"><div class=" redoc-collapsable-container closed-container"><div class="redoc-collapsable-container-closed"><div class="redoc-method-signature"><i class="redoc-icon-expand fas fa-angle-down "></i><span class="method-class-name">PacketLogger</span>.<span class="method-name">AddWhitelist</span>(<span class="redoc-method-params-sign"><span class="redoc-variable-name">packetID</span></span>)</div></div><div class="redoc-collapsable-container-open"><div class="redoc-property-title"><i class="redoc-icon-collapse fas fa-angle-up"></i><span class="method-class-name">PacketLogger</span>.<span class="method-name">AddWhitelist</span>(<span class="redoc-method-params-sign"><span class="redoc-variable-name">packetID</span></span>)</div>
 <div class="method-description">Add the packetID to the whitelist. Packets in the whitelist are always. (See PacketLogger.DiscardAll() )</div>
@@ -101,8 +100,8 @@ If the packetPath is not set or not resognized, the function simply returns the 
 <span class="redoc-method-params"><span class="redoc-variable-name">active</span><span class="redoc-variable-type">Boolean</span></span></div></div>
 <div class="method-returns"><div id="" class="redoc-method-return"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return-box"><span class="redoc-variable-type">String[][]</span><div class="redoc-method-return-desc">List of strings of currently active packet paths.</div></div></div></div></div></div></div></div>
 <div class="redoc-class-method-entry"><a id="M-PacketLogger-RemoveTemplate" class="redoc-permalink" href="#M-PacketLogger-RemoveTemplate"><i class="redoc-icon-link fas fa-link "></i></a><div class="redoc-method-container"><div class=" redoc-collapsable-container closed-container"><div class="redoc-collapsable-container-closed"><div class="redoc-method-signature"><i class="redoc-icon-expand fas fa-angle-down "></i><span class="method-class-name">PacketLogger</span>.<span class="method-name">RemoveTemplate</span>(<span class="redoc-method-params-sign"><span class="redoc-variable-name">packetID</span></span>)</div></div><div class="redoc-collapsable-container-open"><div class="redoc-property-title"><i class="redoc-icon-collapse fas fa-angle-up"></i><span class="method-class-name">PacketLogger</span>.<span class="method-name">RemoveTemplate</span>(<span class="redoc-method-params-sign"><span class="redoc-variable-name">packetID</span></span>)</div>
-<div class="method-description">Remove a custom template for RazorEnhanced packet logger.</div>
-<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params-box"><span class="redoc-method-params"><span class="redoc-variable-name">packetID</span><span class="redoc-variable-type">Int32</span></span></div></div>
+<div class="method-description">Remove a PacketTemplate for RazorEnhanced packet logger.</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params-box"><span class="redoc-method-params"><span class="redoc-variable-name">packetID</span><span class="redoc-variable-type">Int32</span><div class="redoc-method-params-desc">Remove a spacific packetID. (Default: -1 Remove All)</div></span></div></div>
 <div class="method-returns"><div id="" class="redoc-method-return"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return-box"><span class="redoc-variable-type">Void</span><br/></div></div></div></div></div></div></div>
 <div class="redoc-class-method-entry"><a id="M-PacketLogger-Reset" class="redoc-permalink" href="#M-PacketLogger-Reset"><i class="redoc-icon-link fas fa-link "></i></a><div class="redoc-method-container"><div class=" redoc-collapsable-container closed-container"><div class="redoc-collapsable-container-closed"><div class="redoc-method-signature"><i class="redoc-icon-expand fas fa-angle-down "></i><span class="method-class-name">PacketLogger</span>.<span class="method-name">Reset</span>()</div></div><div class="redoc-collapsable-container-open"><div class="redoc-property-title"><i class="redoc-icon-collapse fas fa-angle-up"></i><span class="method-class-name">PacketLogger</span>.<span class="method-name">Reset</span>()</div>
 <div class="method-description">Reset the packet logger to defaults.</div>
