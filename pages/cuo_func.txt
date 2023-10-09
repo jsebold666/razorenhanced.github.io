@@ -1,0 +1,30 @@
+====== Scripting - CUO Specific Functions ======
+Here can find some information about Scripting functions that work with CUO
+
+===== Map Related =====
+
+{|style="font-size:85%; border:solid 2px; width: 50%;"
+|style="font-size:150%;  padding: 2px" colspan="2" | **Load Map Markers**
+|- style="background-color:#f0f0f0;"
+|**Syntax**
+|style="width: 90%" | CUO.LoadMarkers()
+|-
+|colspan="2" |**Description:**
+|-
+|colspan="2" | Calls the LoadMarkers function on the CUO world map. The map must be open for this to work.
+use in your code like:
+<code>
+#
+CUO.LoadMarkers()
+#
+</code>
+|- style="background-color:#f0f0f0;"
+|**Returns**
+|nothing
+|-
+|**In Object:**
+|CUO
+|- style="background-color:#f0f0f0;"
+|**Parameters:**
+
+|}
