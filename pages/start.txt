@@ -44,7 +44,7 @@
   *[[http://razorenhanced.net/UOS_Documentation.html|UOS Documentation]]
   *[[Player_data_and_function|Player data and function]]
   *[[ cast_function|Cast function]]
-  *[[ CUO_func | Functions specific to CUO use]]
+  *[[ CUO_func | CUO specific functions]]
   *[[ mobile_struct | Mobile type structure]]
   *[[ mobile_func | Mobiles data and function]]
   *[[ item_struct | Item type structure]]
