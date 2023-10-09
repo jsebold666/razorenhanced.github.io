@@ -107,3 +107,30 @@ CUO.CloseTMap()
 
 |}
 
+===== CUO Profile Option Changes =====
+
+{|style="font-size:85%; border:solid 2px; width: 50%;"
+|style="font-size:150%;  padding: 2px" colspan="2" | **Sets an option in the CUO Profile**
+|- style="background-color:#f0f0f0;"
+|**Syntax**
+|style="width: 90%" | CUO.ProfilePropertySet(string propertyName, bool enable)
+|-
+|colspan="2" |**Description:**
+|-
+|colspan="2" | This was just an experiment to see if I could automate the changing of CUO properties. 
+use in your code like:
+<code>
+#
+CUO.ProfilePropertySet("fps", "80")
+#
+</code>
+|- style="background-color:#f0f0f0;"
+|**Returns**
+|Nothing
+|-
+|**In Object:**
+|CUO
+|- style="background-color:#f0f0f0;"
+|**Parameters:**
+
+|}
