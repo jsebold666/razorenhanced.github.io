@@ -134,3 +134,141 @@ CUO.ProfilePropertySet("fps", "80")
 |**Parameters:**
 
 |}
+
+===== CUO Container Gump Functions =====
+
+{|style="font-size:85%; border:solid 2px; width: 50%;"
+|style="font-size:150%;  padding: 2px" colspan="2" | **Opens a Container at a specific location**
+|- style="background-color:#f0f0f0;"
+|**Syntax**
+|style="width: 90%" | CUO.OpenContainerAt(Item bag, int x, int y)
+|-
+|colspan="2" |**Description:**
+|-
+|colspan="2" | Opens the specified container with the gump at the x, y provided. If already open nothing is done. 
+use in your code like:
+<code>
+#
+CUO.ProfilePropertySet("fps", "80")
+#
+</code>
+|- style="background-color:#f0f0f0;"
+|**Returns**
+|Nothing
+|-
+|**In Object:**
+|CUO
+|- style="background-color:#f0f0f0;"
+|**Parameters:**
+
+|}
+
+{|style="font-size:85%; border:solid 2px; width: 50%;"
+|style="font-size:150%;  padding: 2px" colspan="2" | **Sets the location the specified gump will open at**
+|- style="background-color:#f0f0f0;"
+|**Syntax**
+|style="width: 90%" | CUO.SetGumpOpenLocation(uint gumpserial, int x, int y)
+|-
+|colspan="2" |**Description:**
+|-
+|colspan="2" | Changes the location the gump will open at 
+use in your code like:
+<code>
+#
+CUO.SetGumpOpenLocation(0x456789, 100, 200)
+#
+</code>
+|- style="background-color:#f0f0f0;"
+|**Returns**
+|Nothing
+|-
+|**In Object:**
+|CUO
+|- style="background-color:#f0f0f0;"
+|**Parameters:**
+| gumpserial - the Serial id of the container
+| x - x coordinate on screen
+| y - y coordinate on screen 
+|}
+
+{|style="font-size:85%; border:solid 2px; width: 50%;"
+|style="font-size:150%;  padding: 2px" colspan="2" | **Moves a gump to a specified location**
+|- style="background-color:#f0f0f0;"
+|**Syntax**
+|style="width: 90%" | CUO.MoveGump(uint serial, int x, int y)
+|-
+|colspan="2" |**Description:**
+|-
+|colspan="2" | Moves a gump on the screen.. Note: I dont think this is working.
+use in your code like:
+<code>
+#
+CUO.MoveGump(0x456789, 100, 200)
+#
+</code>
+|- style="background-color:#f0f0f0;"
+|**Returns**
+|Nothing
+|-
+|**In Object:**
+|CUO
+|- style="background-color:#f0f0f0;"
+|**Parameters:**
+| serial - the Serial id of the container
+| x - x coordinate on screen
+| y - y coordinate on screen 
+|}
+
+===== Player Status Gump Functions =====
+
+{|style="font-size:85%; border:solid 2px; width: 50%;"
+|style="font-size:150%;  padding: 2px" colspan="2" | **Show the player status bar at a specific location**
+|- style="background-color:#f0f0f0;"
+|**Syntax**
+|style="width: 90%" | CUO.OpenMyStatusBar(int x, int y)
+|-
+|colspan="2" |**Description:**
+|-
+|colspan="2" | Opens the player status bar at the specified location.
+use in your code like:
+<code>
+#
+CUO.OpenMyStatusBar(100, 200)
+#
+</code>
+|- style="background-color:#f0f0f0;"
+|**Returns**
+|Nothing
+|-
+|**In Object:**
+|CUO
+|- style="background-color:#f0f0f0;"
+|**Parameters:**
+| x - x coordinate on screen
+| y - y coordinate on screen 
+|}
+
+{|style="font-size:85%; border:solid 2px; width: 50%;"
+|style="font-size:150%;  padding: 2px" colspan="2" | **Remove the player status bar**
+|- style="background-color:#f0f0f0;"
+|**Syntax**
+|style="width: 90%" | CUO.CloseMyStatusBar()
+|-
+|colspan="2" |**Description:**
+|-
+|colspan="2" | Closes the player status bar.
+use in your code like:
+<code>
+#
+CUO.CloseMyStatusBar()
+#
+</code>
+|- style="background-color:#f0f0f0;"
+|**Returns**
+|Nothing
+|-
+|**In Object:**
+|CUO
+|- style="background-color:#f0f0f0;"
+|**Parameters:**
+|}
