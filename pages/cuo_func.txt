@@ -28,3 +28,30 @@ CUO.LoadMarkers()
 |**Parameters:**
 
 |}
+
+{|style="font-size:85%; border:solid 2px; width: 50%;"
+|style="font-size:150%;  padding: 2px" colspan="2" | **Go to Map Marker**
+|- style="background-color:#f0f0f0;"
+|**Syntax**
+|style="width: 90%" | CUO.GoToMarker(x, y)
+|-
+|colspan="2" |**Description:**
+|-
+|colspan="2" | Executes the GoToMarker function on the CUO world map passing the x and y you provided. The map must be open for this to work.
+use in your code like:
+<code>
+#
+CUO.GoToMarker(100, 100)
+#
+</code>
+|- style="background-color:#f0f0f0;"
+|**Returns**
+|nothing
+|-
+|**In Object:**
+|CUO
+|- style="background-color:#f0f0f0;"
+|**Parameters:**
+
+|}
+
