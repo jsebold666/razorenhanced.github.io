@@ -310,7 +310,7 @@ CUO.OpenMobileHealthBar(0x345678, 100, 200, False)
 |-
 |colspan="2" |**Description:**
 |-
-|colspan="2" | Closesa health bar for a mobile.
+|colspan="2" | Closes a health bar for a mobile.
 use in your code like:
 <code>
 #
@@ -326,4 +326,32 @@ CUO.CloseMobileHealthBar(0x345678)
 |- style="background-color:#f0f0f0;"
 |**Parameters:**
 | uint mobileserial
+|}
+
+===== CUO Macro Function =====
+
+{|style="font-size:85%; border:solid 2px; width: 50%;"
+|style="font-size:150%;  padding: 2px" colspan="2" | **Play a CUO macro by name**
+|- style="background-color:#f0f0f0;"
+|**Syntax**
+|style="width: 90%" | CUO.PlayMacro(string macroName)
+|-
+|colspan="2" |**Description:**
+|-
+|colspan="2" | (WARNING!! Limited Testing) Attempts to play a CUO macro given its name.
+use in your code like:
+<code>
+#
+CUO.PlayMacro("MyMacro")
+#
+</code>
+|- style="background-color:#f0f0f0;"
+|**Returns**
+|Nothing
+|-
+|**In Object:**
+|CUO
+|- style="background-color:#f0f0f0;"
+|**Parameters:**
+| string macroName
 |}
