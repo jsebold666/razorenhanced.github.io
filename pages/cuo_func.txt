@@ -338,7 +338,7 @@ CUO.CloseMobileHealthBar(0x345678)
 |-
 |colspan="2" |**Description:**
 |-
-|colspan="2" | (WARNING!! Limited Testing) Attempts to play a CUO macro given its name.
+|colspan="2" | WARNING Limited Testing: Attempts to play a CUO macro given its name.
 use in your code like:
 <code>
 #
