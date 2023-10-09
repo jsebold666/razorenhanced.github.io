@@ -272,3 +272,58 @@ CUO.CloseMyStatusBar()
 |- style="background-color:#f0f0f0;"
 |**Parameters:**
 |}
+
+{|style="font-size:85%; border:solid 2px; width: 50%;"
+|style="font-size:150%;  padding: 2px" colspan="2" | **Open the health bar of a mobile at a specified screen location**
+|- style="background-color:#f0f0f0;"
+|**Syntax**
+|style="width: 90%" | CUO.OpenMobileHealthBar(uint mobileserial, int x, int y, bool custom)
+|-
+|colspan="2" |**Description:**
+|-
+|colspan="2" | Opens a health bar for a mobile and places the gump at the specified location.
+use in your code like:
+<code>
+#
+CUO.OpenMobileHealthBar(0x345678, 100, 200, False)
+#
+</code>
+|- style="background-color:#f0f0f0;"
+|**Returns**
+|Nothing
+|-
+|**In Object:**
+|CUO
+|- style="background-color:#f0f0f0;"
+|**Parameters:**
+| uint mobileserial
+| int x 
+| int y
+| bool custom - True - the CUO square "minimalist" gump vs False - the standard UO gump
+|}
+
+{|style="font-size:85%; border:solid 2px; width: 50%;"
+|style="font-size:150%;  padding: 2px" colspan="2" | **Close the health bar of a mobile**
+|- style="background-color:#f0f0f0;"
+|**Syntax**
+|style="width: 90%" | CUO.CloseMobileHealthBar(uint mobileserial)
+|-
+|colspan="2" |**Description:**
+|-
+|colspan="2" | Closesa health bar for a mobile.
+use in your code like:
+<code>
+#
+CUO.CloseMobileHealthBar(0x345678)
+#
+</code>
+|- style="background-color:#f0f0f0;"
+|**Returns**
+|Nothing
+|-
+|**In Object:**
+|CUO
+|- style="background-color:#f0f0f0;"
+|**Parameters:**
+| uint mobileserial
+|}
