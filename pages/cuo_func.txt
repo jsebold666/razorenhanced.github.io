@@ -80,3 +80,30 @@ CUO.FreeView(True)
 |**Parameters:**
 
 |}
+
+{|style="font-size:85%; border:solid 2px; width: 50%;"
+|style="font-size:150%;  padding: 2px" colspan="2" | **Close Treasure Map**
+|- style="background-color:#f0f0f0;"
+|**Syntax**
+|style="width: 90%" | CUO.CloseTMap()
+|-
+|colspan="2" |**Description:**
+|-
+|colspan="2" | Finds the first Treasure Map gump on your screen and closes it. If a Treasure Map gump was found returns True, otherwise returns False.
+use in your code like:
+<code>
+#
+CUO.CloseTMap()
+#
+</code>
+|- style="background-color:#f0f0f0;"
+|**Returns**
+|True if a Treasure map was closed, otherwise False
+|-
+|**In Object:**
+|CUO
+|- style="background-color:#f0f0f0;"
+|**Parameters:**
+
+|}
+
