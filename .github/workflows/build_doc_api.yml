@@ -32,15 +32,10 @@ jobs:
   
     #Run 
     - name: Run RE to trigger the creation of AutoComplete.json
-      run: |
-      {
-        echo 'EXECUTION_OUTPUT<<EOF'
-        .\RazorEnhanced.exe --autoDocsOnly
-        echo EOF
-      } >> "$GITHUB_ENV"
-  
-  - name: parse the output
-    run: echo $EXECUTION_OUTPUT
+      run: .\RazorEnhanced.exe --autoDocsOnly
+      
+    - name: parse the output
+      run: echo $EXECUTION_OUTPUT
       
     - name: Display directories
       run: dir Config/
