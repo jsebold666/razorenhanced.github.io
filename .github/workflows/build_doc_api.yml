@@ -31,9 +31,15 @@ jobs:
       run: dir
   
     #Run 
+    #- name: Run RE to trigger the creation of AutoComplete.json
+    #  run: $proc = start ./RazorEnhanced.exe -Passthru; $proc | Wait-Process -Timeout 60 -ErrorAction SilentlyContinue; kill $proc; echo done;
+    
+    # Try to run directly   
     - name: Run RE to trigger the creation of AutoComplete.json
-      run: $proc = start ./RazorEnhanced.exe -Passthru; $proc | Wait-Process -Timeout 60 -ErrorAction SilentlyContinue; kill $proc; echo done;
-      
+      run: |
+        RazorEnhanced.exe --autoDocsOnly
+        dir Config/
+    
     - name: parse the output
       run: echo $EXECUTION_OUTPUT
       
