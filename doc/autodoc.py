@@ -300,7 +300,7 @@ class HTML():
         link = ' href="#{}"'.format(url)
         cssId = ' id="{}"'.format(url)
         if cssClass is None: cssClass = 'redoc-permalink' 
-        cssClass =  '' if cssClass is '' else ' class="{}"'.format(cssClass)
+        cssClass =  '' if cssClass == '' else ' class="{}"'.format(cssClass)
         return '<a{}{}{}>{}</a>'.format(cssId, cssClass, link, content)
         
     @staticmethod
