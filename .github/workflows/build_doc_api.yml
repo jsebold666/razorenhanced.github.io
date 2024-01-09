@@ -38,7 +38,7 @@ jobs:
     # Try to run directly   
     - name: Run RE to trigger the creation of AutoComplete.json
       run: |
-        ./RazorEnhanced.exe -ArgumentList "--autoDocsOnly"
+        Start-Process -FilePath "./RazorEnhanced.exe" -ArgumentList "--autoDocsOnly"
         dir Config/
     
     - name: parse the output
