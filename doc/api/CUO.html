@@ -8,7 +8,7 @@
 </head>
 
 <body>
-<div class="redoc-page-container"><div class="redoc-page-left"><div class="redoc-doc-version"><a href="./index.html">RE API v0.8.2.123</a></div><div id="redoc-main-menu"><a class="redoc-main-menu-entry" href="./AutoLoot.html">AutoLoot</a>
+<div class="redoc-page-container"><div class="redoc-page-left"><div class="redoc-doc-version"><a href="./index.html">RE API v0.8.2.125</a></div><div id="redoc-main-menu"><a class="redoc-main-menu-entry" href="./AutoLoot.html">AutoLoot</a>
 <a class="redoc-main-menu-entry" href="./AutoLoot.AutoLootItem.html">AutoLoot.AutoLootItem</a>
 <a class="redoc-main-menu-entry" href="./BandageHeal.html">BandageHeal</a>
 <a class="redoc-main-menu-entry" href="./BuyAgent.html">BuyAgent</a>
@@ -80,6 +80,23 @@ First T-Map is retrieved, and then only closed if it is a map
 Returns True if a map was closed, else False</div>
 
 <div class="method-returns"><div id="" class="redoc-method-return"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return-box"><span class="redoc-variable-type">Boolean</span><br/></div></div></div></div></div></div></div>
+<div class="redoc-class-method-entry"><a id="M-CUO-FollowMobile" class="redoc-permalink" href="#M-CUO-FollowMobile"><i class="redoc-icon-link fas fa-link "></i></a><div class="redoc-method-container"><div class=" redoc-collapsable-container closed-container"><div class="redoc-collapsable-container-closed"><div class="redoc-method-signature"><i class="redoc-icon-expand fas fa-angle-down "></i><span class="method-class-name">CUO</span>.<span class="method-name">FollowMobile</span>(<span class="redoc-method-params-sign"><span class="redoc-variable-name">mobileserial</span></span>)</div></div><div class="redoc-collapsable-container-open"><div class="redoc-property-title"><i class="redoc-icon-collapse fas fa-angle-up"></i><span class="method-class-name">CUO</span>.<span class="method-name">FollowMobile</span>(<span class="redoc-method-params-sign"><span class="redoc-variable-name">mobileserial</span></span>)</div>
+<div class="method-description">Make the ClassicUO client follow the specific mobile.
+            
+This is the same behavior as alt + left-clicking, which normally
+shows the overhead message "Now following."</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params-box"><span class="redoc-method-params"><span class="redoc-variable-name">mobileserial</span><span class="redoc-variable-type">UInt32</span></span></div></div>
+<div class="method-returns"><div id="" class="redoc-method-return"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return-box"><span class="redoc-variable-type">Void</span><br/></div></div></div></div></div></div></div>
+<div class="redoc-class-method-entry"><a id="M-CUO-FollowOff" class="redoc-permalink" href="#M-CUO-FollowOff"><i class="redoc-icon-link fas fa-link "></i></a><div class="redoc-method-container"><div class=" redoc-collapsable-container closed-container"><div class="redoc-collapsable-container-closed"><div class="redoc-method-signature"><i class="redoc-icon-expand fas fa-angle-down "></i><span class="method-class-name">CUO</span>.<span class="method-name">FollowOff</span>()</div></div><div class="redoc-collapsable-container-open"><div class="redoc-property-title"><i class="redoc-icon-collapse fas fa-angle-up"></i><span class="method-class-name">CUO</span>.<span class="method-name">FollowOff</span>()</div>
+<div class="method-description">Stop the ClassicUO client from following, if it was following a
+mobile.</div>
+
+<div class="method-returns"><div id="" class="redoc-method-return"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return-box"><span class="redoc-variable-type">Void</span><br/></div></div></div></div></div></div></div>
+<div class="redoc-class-method-entry"><a id="M-CUO-Following" class="redoc-permalink" href="#M-CUO-Following"><i class="redoc-icon-link fas fa-link "></i></a><div class="redoc-method-container"><div class=" redoc-collapsable-container closed-container"><div class="redoc-collapsable-container-closed"><div class="redoc-method-signature"><i class="redoc-icon-expand fas fa-angle-down "></i><span class="method-class-name">CUO</span>.<span class="method-name">Following</span>()</div></div><div class="redoc-collapsable-container-open"><div class="redoc-property-title"><i class="redoc-icon-collapse fas fa-angle-up"></i><span class="method-class-name">CUO</span>.<span class="method-name">Following</span>()</div>
+<div class="method-description">Returns the status and target of the ClassicUO client's follow
+behavior.</div>
+
+<div class="method-returns"><div id="" class="redoc-method-return"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return-box"><span class="redoc-variable-type">ValueTuple[Boolean, UInt32]</span><div class="redoc-method-return-desc">bool followingMode, uint followingTarget</div></div></div></div></div></div></div></div>
 <div class="redoc-class-method-entry"><a id="M-CUO-FreeView" class="redoc-permalink" href="#M-CUO-FreeView"><i class="redoc-icon-link fas fa-link "></i></a><div class="redoc-method-container"><div class=" redoc-collapsable-container closed-container"><div class="redoc-collapsable-container-closed"><div class="redoc-method-signature"><i class="redoc-icon-expand fas fa-angle-down "></i><span class="method-class-name">CUO</span>.<span class="method-name">FreeView</span>(<span class="redoc-method-params-sign"><span class="redoc-variable-name">free</span></span>)</div></div><div class="redoc-collapsable-container-open"><div class="redoc-property-title"><i class="redoc-icon-collapse fas fa-angle-up"></i><span class="method-class-name">CUO</span>.<span class="method-name">FreeView</span>(<span class="redoc-method-params-sign"><span class="redoc-variable-name">free</span></span>)</div>
 <div class="method-description">Invokes the FreeView function inside the CUO code
 First value is retrieved, and then only set if its not correct</div>
@@ -109,8 +126,8 @@ Map must be open for this to work</div>
 <div class="redoc-class-method-entry"><a id="M-CUO-OpenContainerAt" class="redoc-permalink" href="#M-CUO-OpenContainerAt"><i class="redoc-icon-link fas fa-link "></i></a><div class="redoc-method-container"><div class=" redoc-collapsable-container closed-container"><div class="redoc-collapsable-container-closed"><div class="redoc-method-signature"><i class="redoc-icon-expand fas fa-angle-down "></i><span class="method-class-name">CUO</span>.<span class="method-name">OpenContainerAt</span>(<span class="redoc-method-params-sign"><span class="redoc-variable-name">bag</span></span>, <span class="redoc-method-params-sign"><span class="redoc-variable-name">x</span></span>, <span class="redoc-method-params-sign"><span class="redoc-variable-name">y</span></span>)</div></div><div class="redoc-collapsable-container-open"><div class="redoc-property-title"><i class="redoc-icon-collapse fas fa-angle-up"></i><span class="method-class-name">CUO</span>.<span class="method-name">OpenContainerAt</span>(<span class="redoc-method-params-sign"><span class="redoc-variable-name">bag</span></span>, <span class="redoc-method-params-sign"><span class="redoc-variable-name">x</span></span>, <span class="redoc-method-params-sign"><span class="redoc-variable-name">y</span></span>)</div>
 <div class="method-description">Set a location that CUO will open the container at
 Set a location that CUO will open the container at</div>
-<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params-box"><span class="redoc-method-params"><span class="redoc-variable-name">bag</span><span class="redoc-variable-type">UInt32</span>
-<span class="redoc-variable-type">Item</span></span>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params-box"><span class="redoc-method-params"><span class="redoc-variable-name">bag</span><span class="redoc-variable-type">Item</span>
+<span class="redoc-variable-type">UInt32</span></span>
 <span class="redoc-method-params"><span class="redoc-variable-name">x</span><span class="redoc-variable-type">Int32</span></span>
 <span class="redoc-method-params"><span class="redoc-variable-name">y</span><span class="redoc-variable-type">Int32</span></span></div></div>
 <div class="method-returns"><div id="" class="redoc-method-return"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return-box"><span class="redoc-variable-type">Void</span><br/></div></div></div></div></div></div></div>
