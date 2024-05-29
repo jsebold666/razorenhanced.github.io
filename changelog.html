@@ -1,3 +1,9 @@
+Version 0.8.2.129 [5/29/2024]
+  Optimized FindType when its passed in a list
+  Changed the minimum (empty) loop time to 100ms from 500 ms
+  Added new setting for debug ts/on/off. ts is like on except it also shows minutes/seconds/ms so you can see how long statements in your script take
+  Changed the way WaitForTarget times out. In some cases a 2000 ms timeout was actually taking over 11,000 ms 
+
 Version 0.8.2.128 [5/29/2024]
   Corrected UOS problem caused by 8.2.127
   Enabled debug on/off statement in UOS 
