@@ -1,3 +1,10 @@
+Version 0.8.2.139 [6/15/2024]
+  Changed the interface for Gumps.SendAdvancedAction
+  I added the old interfaces that take a List[Int32] to maintain backwards compatibility, but those are just wrappers.
+  The new api lets you code sending switches and text for a gump with a single line (e.g.)
+  Gumps.SendAdvancedAction(0xdc465d71, 4, [1], ["60000"])
+  Where the old api requires List[Int32] and a lot of messy code
+
 Version 0.8.2.138 [6/14/2024]
   UOS playsound added by Dramoor
 
