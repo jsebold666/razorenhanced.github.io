@@ -1,6 +1,12 @@
+Version 0.8.2.143 [6/19/2024]
+  The partial fix (8.2.142) changes missed fixes for SendAdvancedAction, this is fixed.
+  The partial fix is going to have to be final fix.
+    1. Even if I provide a list of seq numbers for the multiple gumpid gumps, there is no way to associate the seq with the item opened
+    2. All the apis would have to be modified to allow a seq to be passed in
+    3. The number of users that need to manipulate multiple gumps of the same type is limited (non-existant?)
+
 Version 0.8.2.142 [6/19/2024]
   Partial fix for gumps in the case where you have multiple active gumps and want to send a command to the non-active gump.
-  Another commit will resolve this completly, but will involve new Gump apis
 
 Version 0.8.2.141 [6/16/2024]
   Oops this fixes gump failures
