@@ -1,4 +1,8 @@
-Version 0.8.2.150 [6/25/2024]
+Version 0.8.2.152 [6/26/2024]
+  UOS MoveType and MoveTypeOffset were just wrong. re-did them trying to match UOS behaviour
+  FindType for both Py and UOS had a bug where the server was returning items of Amount == 0, so I ignore them now.
+
+Version 0.8.2.151 [6/26/2024]
   Changed Gumps.WaitGump so that if the gump is already up it doesnt wait
   Changed Gumps.WaitGump so the wait time is more accurate
   Changed UOS findtype so that it evaluates all possible solutions when looking for an amount
