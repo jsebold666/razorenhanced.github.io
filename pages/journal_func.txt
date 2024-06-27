@@ -291,7 +291,7 @@ while not Journal.SearchByName("Hello", "Credzba"):
 |colspan="2" |Pause script and wait when a text is present in journal. Text is case sensitive and max wait delay is in ms.
 |- style="background-color:#f0f0f0;"
 |**Returns**
-|void
+|bool - True if string found, False - timeout
 |-
 |**In Object:**
 |Journal
