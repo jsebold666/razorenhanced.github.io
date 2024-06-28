@@ -1,3 +1,179 @@
+Version 0.8.2.155 [6/28/2024]
+  Small change to fix bug at server selection
+
+Version 0.8.2.154 [6/27/2024]
+  Found a bug with saving changes not being reloaded. fixed
+
+Version 0.8.2.153 [6/27/2024]
+  Changed the script preload from all-on to default-off.
+  Added the ability to specify preload on a file by file basis.
+  preloading all your scripts can cause longer load times as the files are being    compiled before your client loads.
+
+Version 0.8.2.152 [6/26/2024]
+  UOS MoveType and MoveTypeOffset were just wrong. re-did them trying to match UOS behaviour
+  FindType for both Py and UOS had a bug where the server was returning items of Amount == 0, so I ignore them now.
+
+Version 0.8.2.151 [6/26/2024]
+  Changed Gumps.WaitGump so that if the gump is already up it doesnt wait
+  Changed Gumps.WaitGump so the wait time is more accurate
+  Changed UOS findtype so that it evaluates all possible solutions when looking for an amount
+
+Version 0.8.2.150 [6/25/2024]
+  Changed the auto-reload logic to maybe fix memory usage problem
+  Fixed python so it shows syntax errors properly
+
+Version 0.8.2.149 [6/25/2024]
+  The roslyn engine was remaining running for performace reasons,
+    but it was blocking updates. Simone fixed it
+
+Version 0.8.2.148 [6/25/2024]
+  Revert 1 small thing, the name of the serial in GumpData
+
+Version 0.8.2.147 [6/24/2024]
+  Many small things:
+    morebitz changed Target.HasTarget to allow any case
+    fixed a dress issue that sometimes generated an exception    
+
+Version 0.8.2.146 [6/21/2024]
+  Fix for client gumps
+
+Version 0.8.2.145 [6/20/2024]
+  Fix for an intermittant crash
+
+Version 0.8.2.144 [6/20/2024]
+  Fixed the damage meter
+  Added filter setting to filter low damage counts overhead  
+
+Version 0.8.2.143 [6/19/2024]
+  The partial fix (8.2.142) changes missed fixes for SendAdvancedAction, this is fixed.
+  The partial fix is going to have to be final fix.
+    1. Even if I provide a list of seq numbers for the multiple gumpid gumps, there is no way to associate the seq with the item opened
+    2. All the apis would have to be modified to allow a seq to be passed in
+    3. The number of users that need to manipulate multiple gumps of the same type is limited (non-existant?)
+
+Version 0.8.2.142 [6/19/2024]
+  Partial fix for gumps in the case where you have multiple active gumps and want to send a command to the non-active gump.
+
+Version 0.8.2.141 [6/16/2024]
+  Oops this fixes gump failures
+
+Version 0.8.2.140 [6/16/2024]
+  Change recorder to python to use SendAdvancedAction if needed
+  Fixed context reply recorder for UOS (I dont know how to fix gump recorded for UOS)
+
+Version 0.8.2.139 [6/15/2024]
+  Changed the interface for Gumps.SendAdvancedAction
+  I added the old interfaces that take a List[Int32] to maintain backwards compatibility, but those are just wrappers.
+  The new api lets you code sending switches and text for a gump with a single line (e.g.)
+  Gumps.SendAdvancedAction(0xdc465d71, 4, [1], ["60000"])
+  Where the old api requires List[Int32] and a lot of messy code
+
+Version 0.8.2.138 [6/14/2024]
+  UOS playsound added by Dramoor
+
+Version 0.8.2.137 [6/14/2024]
+  UOS will persist the alias across script execution for default namespace.
+  Not across UO execution, but across multiple scripts 
+
+Version 0.8.2.136 [6/14/2024]
+  The line content of gumps was getting corrupted - fixed
+
+Version 0.8.2.135 [6/11/2024]
+  Made a typo on recording gumps, corrected
+  In the conversion for UOS from object to type I added the color
+
+Version 0.8.2.134 [6/10/2024]
+  added new right click in editor to change use object into use by type
+  The old object has to still exist so I can get its type
+
+Version 0.8.2.133 [6/10/2024]
+  Credzba fixed UOS parser allowed a short circuit if / or  
+
+Version 0.8.2.132 [6/10/2024]
+  Dramoor added the color function for UOS and fixed range in findobject
+  Credzba fixed UOS parser so a failed expression in an if returns false instead of runtime error, thats probably not great but its what UOSteam did and allowed a short circuit if / and 
+
+
+Version 0.8.2.131 [6/6/2024]
+  Dramoor fixed hightlighting in UOS (looks great)
+  Fixed in list for UOS
+  Fixed usetype in UOS
+
+Version 0.8.2.130 [5/31/2024]
+  Change UOS to highlight endif/while/for
+  Merge dotdotdot code to add Player.BuffTime that will return how long is left on a buff
+
+Version 0.8.2.129 [5/29/2024]
+  Optimized FindType when its passed in a list
+  Changed the minimum (empty) loop time to 100ms from 500 ms
+  Added new setting for debug ts/on/off. ts is like on except it also shows minutes/seconds/ms so you can see how long statements in your script take
+  Changed the way WaitForTarget times out. In some cases a 2000 ms timeout was actually taking over 11,000 ms 
+
+Version 0.8.2.128 [5/29/2024]
+  Corrected UOS problem caused by 8.2.127
+  Enabled debug on/off statement in UOS 
+
+Version 0.8.2.127 [5/23/2024]
+  Corrected UOS commands so that they return fals if they fail
+  Changed UOS Dress and Undress to wait until action completed
+
+Version 0.8.2.126 [4/1/2024]
+  Remove accidental commit for spell already casting message
+
+Version 0.8.2.125 [3/31/2024]
+  c# fix from SimonSoft
+  New api for Follow in CUO from soyota
+
+Version 0.8.2.124 [3/22/2024]
+  Apply the journal filter list to internal messges as well as server generated messages
+
+Version 0.8.2.121-123 [3/19/2024]
+  Removed the Journal tab, and improved the internal journal tracking
+
+Version 0.8.2.120 [2/24/2024]
+  Dalamar fixed a UOS issue and added event manager
+
+Version 0.8.2.119 [2/14/2024]
+  Dalamar fixed a crash in UOS subsystem when a syntax error occurred
+
+Version 0.8.2.118 [2/11/2024]
+  Dramoor added AttackType and TargetType to allow for attacking items instead of mobiles
+
+Version 0.8.2.117 [1/28/2024]
+  Fixes for UOS syntax help
+  UOS fixes for usebytype
+  Accidently put in an old vendor PR, but not sure what it did :(
+
+Version 0.8.2.116 [1/27/2024]
+  Hudeman provided read/share file changes to solve a problem with external editors
+
+Version 0.8.2.115 [1/26/2024]
+  Yet another attempt to fix the failure when scripts are auto-reloaded
+
+Version 0.8.2.114 [1/26/2024]
+  Serialized the file io when refreshing scripts in an attempt to stop a crash thats occurring
+
+Version 0.8.2.113 [1/25/2024]
+Version 0.8.2.112 [1/24/2024]
+Version 0.8.2.111 [1/24/2024]
+  Fix TargetRelative to work in caves
+
+Version 0.8.2.110 [1/24/2024]
+  Dalamar fixed all the UOS script issues
+  Added a checkbox to reload scripts if you use an external editor
+
+Version 0.8.2.109 [1/23/2024]
+  Fix the UOSteam Turn/Run/Walk to work with UOS terms NorthWest/SouthWest/ etc.
+
+Version 0.8.2.108 [1/23/2024]
+  Fix the UOSteam Property expression to work with properties that have values
+
+Version 0.8.2.107 [1/19/2024]
+  load skills from mul file instead of internal list
+
+<strong>Version 0.8.2.106 [1/17/2024]</strong>
+  Fix new installs to create required directories
+</p>
 <strong>Version 0.8.2.105 [1/9/2024]</strong>
   fix autodoc generation bug 104 caused.
   add --autoDocsOnly command option
