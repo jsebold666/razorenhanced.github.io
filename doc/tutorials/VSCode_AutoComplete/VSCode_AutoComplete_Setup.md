@@ -40,7 +40,7 @@ This info comes from entries in Discord, and links to sites mentioned in Discord
 ## 6. Open a new file and add the following code
 Test File to verify from
 ```py
-AutoComplete import *
+from AutoComplete import *
 Misc.SendMessage("Test MSC. AutoComplete working!", 33)
 ```
 
