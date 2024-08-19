@@ -27,9 +27,9 @@
 
 
 Optional thoughts. 
-   I don't like having the plugin burried inside the Classic UO folder, because all your scripts etc. end up in there, and I use the same stuff on many servers. So What I did was I didn't add the zip in 4.2, but instead sent into the cli, and in the folder ~/Desktop/CUO/ClassicUO/Data/Plugins/ I created a sym link to a RazorEnhanced folder thats on my desktop. 
-   1. unzip the RazorEnhanced file into a folder, for this example we'll use ~/Desktop/RazorEnhanced
-      1a. Use File Explorer (Dolphin or whatever) to open zip file and drag all its contents to a folder named RazorEnhanced on your desktop
+   I don't like having the plugin burried inside the Classic UO folder, because all your scripts etc. end up in there, and I use the same stuff on many servers. So what I did was I didn't add the zip in 4.2, but instead went into the cli, and in the folder ~/Desktop/CUO/ClassicUO/Data/Plugins/ I created a sym link to a RazorEnhanced folder thats on my desktop. 
+   1. unzip the RazorEnhanced file into a folder, for this example we'll use ~/Desktop/RazorEnhanced.  Do one of these 2:
+      1a. Use File Explorer (Dolphin or whatever) to open the zip file and drag all its contents to a folder named RazorEnhanced on your desktop
 	  1b. unzip -o -d ~/Desktop/RazorEnhanced  ./RazorEnhanced-0.8.2.185.zip
    2. cd to ~/Desktop/CUO/ClassicUO/Data/Plugins
    3. ln -s ~/Desktop/RazorEnhanced ./
