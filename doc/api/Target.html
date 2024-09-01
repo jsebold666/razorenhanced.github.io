@@ -8,7 +8,7 @@
 </head>
 
 <body>
-<div class="redoc-page-container"><div class="redoc-page-left"><div class="redoc-doc-version"><a href="./index.html">RE API v0.8.2.193</a></div><div id="redoc-main-menu"><a class="redoc-main-menu-entry" href="./AutoLoot.html">AutoLoot</a>
+<div class="redoc-page-container"><div class="redoc-page-left"><div class="redoc-doc-version"><a href="./index.html">RE API v0.8.2.195</a></div><div id="redoc-main-menu"><a class="redoc-main-menu-entry" href="./AutoLoot.html">AutoLoot</a>
 <a class="redoc-main-menu-entry" href="./AutoLoot.AutoLootItem.html">AutoLoot.AutoLootItem</a>
 <a class="redoc-main-menu-entry" href="./BandageHeal.html">BandageHeal</a>
 <a class="redoc-main-menu-entry" href="./BuyAgent.html">BuyAgent</a>
@@ -147,11 +147,11 @@ Optionally specify the target flag and check if the cursor is "Beneficial", "Har
 <div class="redoc-class-method-entry"><a id="M-Target-TargetExecute" class="redoc-permalink" href="#M-Target-TargetExecute"><i class="redoc-icon-link fas fa-link "></i></a><div class="redoc-method-container"><div class=" redoc-collapsable-container closed-container"><div class="redoc-collapsable-container-closed"><div class="redoc-method-signature"><i class="redoc-icon-expand fas fa-angle-down "></i><span class="method-class-name">Target</span>.<span class="method-name">TargetExecute</span>(<span class="redoc-method-params-sign"><span class="redoc-variable-name">x</span></span>, <span class="redoc-method-params-sign"><span class="redoc-variable-name">y</span></span>, <span class="redoc-method-params-sign"><span class="redoc-variable-name">z</span></span>, <span class="redoc-method-params-sign"><span class="redoc-variable-name">StaticID</span></span>)</div></div><div class="redoc-collapsable-container-open"><div class="redoc-property-title"><i class="redoc-icon-collapse fas fa-angle-up"></i><span class="method-class-name">Target</span>.<span class="method-name">TargetExecute</span>(<span class="redoc-method-params-sign"><span class="redoc-variable-name">x</span></span>, <span class="redoc-method-params-sign"><span class="redoc-variable-name">y</span></span>, <span class="redoc-method-params-sign"><span class="redoc-variable-name">z</span></span>, <span class="redoc-method-params-sign"><span class="redoc-variable-name">StaticID</span></span>)</div>
 <div class="method-description">Execute target on specific serial, item, mobile, X Y Z point.</div>
 <div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params-box"><span class="redoc-method-params"><span class="redoc-variable-name">x</span><span class="redoc-variable-type">Int32</span>
-<span class="redoc-variable-type">Mobile</span>
-<span class="redoc-variable-type">Item</span><div class="redoc-method-params-desc">X coordinate.
+<span class="redoc-variable-type">Item</span>
+<span class="redoc-variable-type">Mobile</span><div class="redoc-method-params-desc">Serial of the Target
+X coordinate.
 Mobile object to Target.
-Item object to Target.
-Serial of the Target</div></span>
+Item object to Target.</div></span>
 <span class="redoc-method-params"><span class="redoc-variable-name">y</span><span class="redoc-variable-type">Int32</span><div class="redoc-method-params-desc">Y coordinate.</div></span>
 <span class="redoc-method-params"><span class="redoc-variable-name">z</span><span class="redoc-variable-type">Int32</span><div class="redoc-method-params-desc">Z coordinate.</div></span>
 <span class="redoc-method-params"><span class="redoc-variable-name">StaticID</span><span class="redoc-variable-type">Int32</span><div class="redoc-method-params-desc">ID of Land/Tile</div></span></div></div>
@@ -168,8 +168,8 @@ Mobile object to target.</div></span>
 <div class="method-description">Find and target a resource using the specified item.</div>
 <div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params-box"><span class="redoc-method-params"><span class="redoc-variable-name">item_serial</span><span class="redoc-variable-type">Int32</span>
 <span class="redoc-variable-type">Item</span><div class="redoc-method-params-desc">Item object to use.</div></span>
-<span class="redoc-method-params"><span class="redoc-variable-name">resource_number</span><span class="redoc-variable-type">String</span>
-<span class="redoc-variable-type">Int32</span><div class="redoc-method-params-desc">Resource as standard name or custom number
+<span class="redoc-method-params"><span class="redoc-variable-name">resource_number</span><span class="redoc-variable-type">Int32</span>
+<span class="redoc-variable-type">String</span><div class="redoc-method-params-desc">Resource as standard name or custom number
                0: ore
                1: sand
                2: wood
