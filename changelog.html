@@ -1,3 +1,9 @@
+Version 0.8.2.197 [9/2/2024]
+  GetLineList in Gumps was returning text + data after  a recent bug fix.
+  I added a second optional parameter dataOnly=True/False that defaults to False
+    so that existing code dependent on data only returns would work
+  There is a small linux change, the text on the help page show the protobuf port number
+
 Version 0.8.2.196 [9/1/2024]
   Forgot about dual client use case,
     disabled the proto server on windows for now
