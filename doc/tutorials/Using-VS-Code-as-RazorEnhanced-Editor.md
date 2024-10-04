@@ -80,6 +80,10 @@
 
   ![image-20241004100422809](example-code.png)
 
+## Make VSC the Default Editor for RazorEnhanced
+
+- Define an environment variable named **EDITOR** that is the full path to the vscode executable.
+
 ## Install RazorEnhanced extension
 
 Note: While writing this I noticed the extension is disable the color highlighting. That will be fixed but doesn't affect these steps.
