@@ -12,13 +12,6 @@
 - Install. (ex: Install path C:/program files/VSCode/ )
 - Launch VSC
 
-## 2. Install the RazorEnhanced Package for VSC
-
-- Download the add-on: [RazorEnhanced on Microsoft Marketplace](https://marketplace.visualstudio.com/search?term=RazorEnhanced&target=VSCode)
-- This includes:
-  - UOSteam support for syntax and highlighting
-  - Python/C#/UOS Play and Record support to RazorEnhanced
-
 ## 3. Install the Python Package for VSC
 
 - Download the add-on: [Python on Microsoft Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
@@ -85,8 +78,6 @@
 - Define an environment variable named **EDITOR** that is the full path to the vscode executable.
 
 ## Install RazorEnhanced extension
-
-Note: While writing this I noticed the extension is disable the color highlighting. That will be fixed but doesn't affect these steps.
 
 - open the extensions bar. ctrl-shift-x or this icon on left side.
 
