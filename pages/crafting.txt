@@ -1,1 +1,3 @@
-[[http://razorenhanced.net/download/scripts/lumberjacking.py|Lumberjacking - Searches for trees and chops them]]
+[[https://razorenhanced.net/download/scripts/lumberjacking.py|Lumberjacking - Chops trees and stores boards]]
+
+[[https://razorenhanced.net/download/scripts/mining.py|Mining - Mines ore and stores it]]
