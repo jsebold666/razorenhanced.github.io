@@ -138,7 +138,7 @@ Here can find some information about Enhanced Scripting function and data about 
 
 
 {|style="font-size:85%; border:solid 2px; width: 50%;"
-|style="font-size:150%;  padding: 2px" colspan="2" | **Bodyes Filter**
+|style="font-size:150%;  padding: 2px" colspan="2" | **Bodies Filter**
 |- style="background-color:#f0f0f0;"
 |**Syntax**
 |style="width: 90%" | Mobiles.Filter.Bodies
