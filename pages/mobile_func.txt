@@ -220,6 +220,48 @@ Here can find some information about Enhanced Scripting function and data about 
 |}
 
 {|style="font-size:85%; border:solid 2px; width: 50%;"
+|style="font-size:150%;  padding: 2px" colspan="2" | **Z Range Min Filter**
+|- style="background-color:#f0f0f0;"
+|**Syntax**
+|style="width: 90%" | Mobiles.Filter.ZRangeMin
+|-
+|colspan="2" |**Description:**
+|-
+|colspan="2" |Set a value of minimum Z range in ApplyFilter function
+|- style="background-color:#f0f0f0;"
+|**Returns**
+|int
+|-
+|**In Object:**
+|Mobiles
+|- style="background-color:#f0f0f0;"
+|**Parameters:**
+|
+
+|}
+
+{|style="font-size:85%; border:solid 2px; width: 50%;"
+|style="font-size:150%;  padding: 2px" colspan="2" | **Z Range Max Filter**
+|- style="background-color:#f0f0f0;"
+|**Syntax**
+|style="width: 90%" | Mobiles.Filter.ZRangeMax
+|-
+|colspan="2" |**Description:**
+|-
+|colspan="2" |Set a value of maximum Z range in ApplyFilter function
+|- style="background-color:#f0f0f0;"
+|**Returns**
+|int
+|-
+|**In Object:**
+|Mobiles
+|- style="background-color:#f0f0f0;"
+|**Parameters:**
+|
+
+|}
+
+{|style="font-size:85%; border:solid 2px; width: 50%;"
 |style="font-size:150%;  padding: 2px" colspan="2" | **Color Filter**
 |- style="background-color:#f0f0f0;"
 |**Syntax**
@@ -408,6 +450,26 @@ Here can find some information about Enhanced Scripting function and data about 
 
 |}
 
+{|style="font-size:85%; border:solid 2px; width: 50%;"
+|style="font-size:150%;  padding: 2px" colspan="2" | **Ignore Pets list Filter**
+|- style="background-color:#f0f0f0;"
+|**Syntax**
+|style="width: 90%" | Mobiles.Filter.IgnorePets
+|-
+|colspan="2" |**Description:**
+|-
+|colspan="2" | Remove any of your pets from the returned filter list.
+|- style="background-color:#f0f0f0;"
+|**Returns**
+|bool
+|-
+|**In Object:**
+|Mobiles
+|- style="background-color:#f0f0f0;"
+|**Parameters:**
+|
+
+|}
 ===== Message =====
 {|style="font-size:85%; border:solid 2px; width: 50%;"
 |style="font-size:150%;  padding: 2px" colspan="2" | **Mobile Message**
