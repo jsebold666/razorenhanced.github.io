@@ -1,3 +1,21 @@
+Version 0.8.2.236 [10/26/2024]
+  Make Deleted public again instead of internal
+  Add parameter WaitAfter to Spell.Cast api so that you can
+    wait for a timeout, completion, or fizzle.
+    It defaults to zero, and is not active if 0 so backward compatible.
+    (e.g. Spells.Cast("Summon Daemon", 10000) will wait until the first of:
+    1. Daemon is summoned
+    2. Spell Fizzels
+    3. 10 seconds
+    )
+  It is possible to confuse the type conversion from Python to C# in a statement like:
+    Spells.Cast("energy bolt", 10000)
+    In this case, I try to check if the 10000 is a target.
+    If it is, I assume you want to cast energy bolt and target the 10000
+    If it is not a valid uo entity, then I assume it is a timeout
+  This could mess up if a timeout happenned to be the same as a target.
+    sorry its gonna target the entity.
+
 Version 0.8.2.235 [10/26/2024]
   Improve guess skill and spell names when mis-spelled
   Now, if you dont get at least the first 2 characters right,
