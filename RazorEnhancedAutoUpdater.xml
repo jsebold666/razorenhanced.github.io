@@ -2,9 +2,9 @@
 <item>
   <version>0.8.2.242</version>
   <url>
-    https://github.com/RazorEnhanced/razorenhanced.github.io/releases/download/0.8.2.242/RazorEnhanced-0.8.2.242.zip
+    https://github.com/jsebold666/RazorEnhanced/releases/download/v0.8.2.242/RazorEnhanced-0.8.2.242.zip
   </url>
   
-  <changelog>https://raw.githubusercontent.com/RazorEnhanced/razorenhanced.github.io/main/changelog.html</changelog>
+  <changelog>https://raw.githubusercontent.com/jsebold666/razorenhanced.github.io/main/changelog.html</changelog>
   <mandatory>false</mandatory>
 </item>
